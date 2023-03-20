@@ -1,0 +1,22 @@
+
+
+.countries{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+
+.country{
+    border: 2px solid ;
+    border-radius: 5px;
+    background-color: rgba(128, 128 ,128, 0.3);
+    /* width: 300px; */
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.country img {
+    width: 200px;
+
+}
