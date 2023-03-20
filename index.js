@@ -17,6 +17,39 @@ const displayCountries = (countries)=>{
 
 }
 
+
+//option 3 : destructuring into parameter
+const getCoutriesHTML = ({name, flags}) => {
+    return `
+    <div class = "country"> 
+    <h2>${name.common}</h2>
+    <img src='${flags.png}'>
+    
+    </div>
+    
+    `
+}
+
+
+//option 2 : destructuring 
+/*
+const getCoutriesHTML = country => {
+
+    const {name, flags} = country
+    return `
+    <div class = "country"> 
+    <h2>${name.common}</h2>
+    <img src='${flags.png}'>
+    
+    </div>
+    
+    `
+}*/
+
+
+
+//option 1 
+/*
 const getCoutriesHTML = country => {
     return `
     <div class = "country"> 
@@ -25,11 +58,10 @@ const getCoutriesHTML = country => {
     
     </div>
     
-    
-    
-    
     `
 }
+*/
+
 
 
 
